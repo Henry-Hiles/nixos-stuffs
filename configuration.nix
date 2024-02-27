@@ -8,6 +8,8 @@
 
 {
 
+  services.switcherooControl.enable = true;
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
 

@@ -2,13 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 
 
 {
 
-  services.switcherooControl.enable = true;
+  services.switcherooControl.enable = lib.mkForce true;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
